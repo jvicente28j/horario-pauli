@@ -1,4 +1,6 @@
-const CACHE = "horario-pauli-v4";
+const CACHE = "horario-pauli-v6";
+
+
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,6 +8,17 @@ const ASSETS = [
   "./icon-180.png",
   "./icon-192.png",
   "./icon-512.png",
+  "./panic-cat-1.webp",
+  "./panic-cat-2.webp",
+  "./panic-cat-3.webp",
+  "./panic-cat-4.webp",
+  "./panic-cat-5.webp",
+  "./panic-cat-6.webp",
+  "./panic-cat-7.webp",
+  "./panic-cat-8.webp",
+  "./panic-cat-9.gif",
+  "./panic-cat-10.webp",
+  "./panic-cat-11.webp"
 ];
 
 self.addEventListener("install", event => {

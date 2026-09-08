@@ -1,9 +1,8 @@
-HORARIO DE PAULI — V6
+HORARIO DE PAULI — V8
 
 NOVEDADES
-- Botón del pánico actualizado con los 6 gatitos elegidos por el usuario.
-- Se mantienen confeti y modo discoteca.
-- Tema rosa pastel más frío y clarito.
+- El botón del pánico ahora incluye los 11 gatitos que ha pedido el usuario.
+- Se mantiene el texto “PUEDES CON TODO, AMOR”, el confeti y el fondo discoteca.
 
 SUBE / REEMPLAZA EN GITHUB
 - index.html
@@ -15,9 +14,13 @@ SUBE / REEMPLAZA EN GITHUB
 - panic-cat-1.webp
 - panic-cat-2.webp
 - panic-cat-3.webp
-- panic-cat-4.gif
-- panic-cat-5.gif
+- panic-cat-4.webp
+- panic-cat-5.webp
 - panic-cat-6.webp
+- panic-cat-7.webp
+- panic-cat-8.webp
+- panic-cat-9.gif
+- panic-cat-10.webp
+- panic-cat-11.webp
 
-Si ves la versión antigua, abre la web una vez en pestaña privada
-o haz una recarga forzada para saltarte la caché.
+Si ves la versión antigua, haz una recarga fuerte o ábrelo en una pestaña privada para saltarte la caché.

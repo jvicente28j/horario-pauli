@@ -117,16 +117,22 @@ button,input,select{font:inherit}.interactive{display:none}.js .interactive{disp
 .panic-subtitle{font-size:clamp(13px,2vw,20px);font-weight:750;margin:0 0 20px}
 .panic-exit{border:2px solid rgba(255,255,255,.8);background:rgba(26,20,37,.56);backdrop-filter:blur(12px);color:white;border-radius:999px;padding:12px 18px;font-weight:900;cursor:pointer}
 
+
 .panic-cat{
-  position:absolute;z-index:4;width:clamp(88px,16vw,190px);height:auto;
+  position:absolute;z-index:4;width:clamp(72px,13vw,180px);height:auto;
   filter:drop-shadow(0 12px 22px rgba(0,0,0,.20));pointer-events:none
 }
-.cat-one{left:4vw;bottom:5vh;transform:rotate(-8deg);animation:catBob 1.45s ease-in-out infinite alternate}
-.cat-two{right:5vw;top:8vh;transform:rotate(9deg);animation:catBob 1.1s ease-in-out .2s infinite alternate-reverse}
-.cat-three{right:10vw;bottom:7vh;transform:rotate(-4deg);animation:catBob 1.3s ease-in-out .45s infinite alternate}
-.cat-four{left:12vw;top:10vh;transform:rotate(-2deg);animation:catBob 1.22s ease-in-out .15s infinite alternate}
-.cat-five{left:42vw;bottom:4vh;transform:translateX(-50%) rotate(6deg);animation:catBob 1.05s ease-in-out .3s infinite alternate-reverse}
-.cat-six{right:24vw;top:18vh;transform:rotate(4deg);animation:catBob 1.55s ease-in-out .1s infinite alternate}
+.cat-1{left:5vw;bottom:7vh;transform:rotate(-6deg);animation:catBob 1.35s ease-in-out infinite alternate}
+.cat-2{right:4vw;top:8vh;transform:rotate(7deg);animation:catBob 1.1s ease-in-out .2s infinite alternate-reverse}
+.cat-3{right:10vw;bottom:6vh;transform:rotate(-3deg);animation:catBob 1.28s ease-in-out .35s infinite alternate}
+.cat-4{left:11vw;top:12vh;transform:rotate(-2deg);animation:catBob 1.18s ease-in-out .15s infinite alternate}
+.cat-5{left:41vw;bottom:4vh;transform:translateX(-50%) rotate(5deg);animation:catBob 1.0s ease-in-out .3s infinite alternate-reverse}
+.cat-6{right:22vw;top:20vh;transform:rotate(4deg);animation:catBob 1.48s ease-in-out .1s infinite alternate}
+.cat-7{left:26vw;top:7vh;transform:rotate(-4deg);animation:catBob 1.22s ease-in-out .22s infinite alternate}
+.cat-8{left:1vw;top:34vh;transform:rotate(5deg);animation:catBob 1.4s ease-in-out .18s infinite alternate-reverse}
+.cat-9{right:36vw;bottom:12vh;transform:rotate(-7deg);animation:catBob 1.16s ease-in-out .27s infinite alternate}
+.cat-10{right:1vw;bottom:28vh;transform:rotate(3deg);animation:catBob 1.24s ease-in-out .12s infinite alternate}
+.cat-11{left:49vw;top:14vh;transform:translateX(-50%) rotate(2deg);animation:catBob 1.08s ease-in-out .33s infinite alternate}
 
 .confetti-layer{position:absolute;inset:0;z-index:3;overflow:hidden;pointer-events:none}
 .confetti{
@@ -142,18 +148,24 @@ button,input,select{font:inherit}.interactive{display:none}.js .interactive{disp
 body.panic-active{overflow:hidden}
 @media(max-width:780px){
   .quick-actions .panic-button{grid-column:1/-1}
-  .panic-cat{width:88px}
-  .cat-one{left:-2vw;bottom:4vh}
-  .cat-two{right:-2vw;top:8vh}
-  .cat-three{right:2vw;bottom:6vh}
-  .cat-four{left:4vw;top:14vh}
-  .cat-five{left:50%;bottom:11vh}
-  .cat-six{right:14vw;top:20vh}
+  .panic-cat{width:72px}
+  .cat-1{left:-1vw;bottom:4vh}
+  .cat-2{right:-2vw;top:6vh}
+  .cat-3{right:4vw;bottom:7vh}
+  .cat-4{left:3vw;top:15vh}
+  .cat-5{left:50%;bottom:12vh}
+  .cat-6{right:13vw;top:19vh}
+  .cat-7{left:20vw;top:7vh}
+  .cat-8{left:-2vw;top:38vh}
+  .cat-9{right:30vw;bottom:3vh}
+  .cat-10{right:-1vw;bottom:29vh}
+  .cat-11{left:50%;top:27vh}
   .panic-center{padding:18px}
 }
 @media(prefers-reduced-motion:reduce){
   .panic-overlay,.panic-overlay:before,.panic-light,.panic-cat,.confetti{animation-duration:12s!important}
 }
+
 
 
 </style>
@@ -2806,7 +2818,7 @@ body.panic-active{overflow:hidden}
   <div class="quick-actions">
     <button class="btn small" id="openNav">Ir a…</button>
     <button class="btn small" id="openSettings">Elegir tema / Personalizar</button>
-    <button class="btn small panic-button" id="panicButton">🚨 Botón del pánico</button>
+    <button class="btn small panic-button" id="panicButton">Chupamela USJ</button>
   </div>
 </div>
 
@@ -2870,16 +2882,21 @@ body.panic-active{overflow:hidden}
   <div class="panic-light panic-light-b"></div>
   <div class="panic-light panic-light-c"></div>
   <div class="confetti-layer" id="confettiLayer"></div>
-  <img src="./panic-cat-1.webp" class="panic-cat cat-one" alt="Gatito 1">
-  <img src="./panic-cat-2.webp" class="panic-cat cat-two" alt="Gatito 2">
-  <img src="./panic-cat-3.webp" class="panic-cat cat-three" alt="Gatito 3">
-  <img src="./panic-cat-4.gif" class="panic-cat cat-four" alt="Gatito 4">
-  <img src="./panic-cat-5.gif" class="panic-cat cat-five" alt="Gatito 5">
-  <img src="./panic-cat-6.webp" class="panic-cat cat-six" alt="Gatito 6">
+  <img src="./panic-cat-1.webp" class="panic-cat cat-1" alt="Gatito 1">
+  <img src="./panic-cat-2.webp" class="panic-cat cat-2" alt="Gatito 2">
+  <img src="./panic-cat-3.webp" class="panic-cat cat-3" alt="Gatito 3">
+  <img src="./panic-cat-4.webp" class="panic-cat cat-4" alt="Gatito 4">
+  <img src="./panic-cat-5.webp" class="panic-cat cat-5" alt="Gatito 5">
+  <img src="./panic-cat-6.webp" class="panic-cat cat-6" alt="Gatito 6">
+  <img src="./panic-cat-7.webp" class="panic-cat cat-7" alt="Gatito 7">
+  <img src="./panic-cat-8.webp" class="panic-cat cat-8" alt="Gatito 8">
+  <img src="./panic-cat-9.gif" class="panic-cat cat-9" alt="Gatito 9">
+  <img src="./panic-cat-10.webp" class="panic-cat cat-10" alt="Gatito 10">
+  <img src="./panic-cat-11.webp" class="panic-cat cat-11" alt="Gatito 11">
   <div class="panic-center">
     <div class="panic-kicker">🚨 MODO PÁNICO 🚨</div>
-    <div class="panic-title">PAULI EN LA DISCO</div>
-    <div class="panic-subtitle">Confeti, gatitos y cero responsabilidades.</div>
+    <div class="panic-title">PUEDES CON TODO, AMOR</div>
+    <div class="panic-subtitle">Confeti, gatitos y energía para comerte la USJ.</div>
     <button class="panic-exit" id="panicExit">Vale, ya estoy bien</button>
   </div>
 </div>
