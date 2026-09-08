@@ -1,13 +1,23 @@
-HORARIO DE PAULI — PAQUETE CORREGIDO
+HORARIO DE PAULI — V6
 
-Sustituye en GitHub TODOS los archivos antiguos por estos:
+NOVEDADES
+- Botón del pánico actualizado con los 6 gatitos elegidos por el usuario.
+- Se mantienen confeti y modo discoteca.
+- Tema rosa pastel más frío y clarito.
+
+SUBE / REEMPLAZA EN GITHUB
 - index.html
 - manifest.webmanifest
 - sw.js
 - icon-180.png
 - icon-192.png
 - icon-512.png
+- panic-cat-1.webp
+- panic-cat-2.webp
+- panic-cat-3.webp
+- panic-cat-4.gif
+- panic-cat-5.gif
+- panic-cat-6.webp
 
-Después espera a que GitHub Pages termine el despliegue y recarga la web.
-Si el navegador conserva una versión anterior, haz una recarga fuerte o abre
-la página en una pestaña privada una vez.
+Si ves la versión antigua, abre la web una vez en pestaña privada
+o haz una recarga forzada para saltarte la caché.
