@@ -1,7 +1,6 @@
-HORARIO DE PAULI — WEB
-======================
+HORARIO DE PAULI — PAQUETE CORREGIDO
 
-Sube TODOS estos archivos juntos al mismo directorio:
+Sustituye en GitHub TODOS los archivos antiguos por estos:
 - index.html
 - manifest.webmanifest
 - sw.js
@@ -9,4 +8,6 @@ Sube TODOS estos archivos juntos al mismo directorio:
 - icon-192.png
 - icon-512.png
 
-No subas solamente index.html si quieres instalación tipo app y uso offline.
+Después espera a que GitHub Pages termine el despliegue y recarga la web.
+Si el navegador conserva una versión anterior, haz una recarga fuerte o abre
+la página en una pestaña privada una vez.

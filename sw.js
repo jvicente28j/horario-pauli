@@ -1,4 +1,4 @@
-const CACHE = "horario-pauli-v1";
+const CACHE = "horario-pauli-v2";
 const ASSETS = [
   "./",
   "./index.html",

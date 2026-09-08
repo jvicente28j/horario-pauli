@@ -96,10 +96,13 @@ button,input,select{font:inherit}.interactive{display:none}.js .interactive{disp
 <meta name="apple-mobile-web-app-title" content="Horario de Pauli">
 <meta name="application-name" content="Horario de Pauli">
 
-
 <style>
 @media(max-width:780px){
-  .desktop-mode.active-mobile{display:block!important;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .desktop-mode.active-mobile{
+    display:block!important;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+  }
   .desktop-mode.active-mobile .week-wrap{min-width:820px}
 }
 </style>
@@ -3042,20 +3045,7 @@ function printAll(){
  .cover{page-break-after:always;min-height:180mm;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20mm}.cover img{width:32mm;height:32mm;border-radius:10mm;object-fit:cover}.cover h1{font-size:28px;margin:8mm 0 2mm}.cover p{font-size:13px;color:#666;margin:0}.stats{margin:8mm 0;font-size:11px}.legend{width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;text-align:left}.legend-item{font-size:8px;display:flex;align-items:center;gap:2mm}.legend-item span{width:4mm;height:4mm;border-radius:1mm}
  .print-week{page-break-after:always}.print-week:last-child{page-break-after:auto}.print-week header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3mm}.print-week h1{font-size:17px;margin:0}.print-week small{font-size:8px;color:#666}
  table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{border:1px solid #bbb}thead th{padding:5px;font-size:9px;background:#f2f2f2}tbody tr{height:7px}.ptime{width:42px;font-size:6.5px;font-weight:normal;color:#666;vertical-align:top;padding:1px 3px}.pevent{padding:3px 4px;vertical-align:top;font-size:7.5px;line-height:1.08}.pevent span{font-size:6.5px;font-weight:normal}.print-week footer{font-size:7px;color:#777;text-align:right;margin-top:2mm}
- @page{size:A4 landscape;margin:7mm}</style></head><body>${cover}${content}<script>window.onload=()=>setTimeout(()=>window.print(),300);<\/script>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch(() => {});
-  });
-}
-// Mantiene "Ahora" y "Siguiente" actualizados si la app queda abierta.
-setInterval(() => {
-  try { render(); } catch (_) {}
-}, 60000);
-</script>
-
-</body></html>`;
+ @page{size:A4 landscape;margin:7mm}</style></head><body>${cover}${content}<script>window.onload=()=>setTimeout(()=>window.print(),300);<\/script></body></html>`;
  const win=window.open("","_blank");if(!win){alert("El navegador ha bloqueado la ventana de impresión. Permite ventanas emergentes y vuelve a intentarlo.");return}win.document.open();win.document.write(doc);win.document.close();
 }
 
@@ -3077,4 +3067,16 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeDetail();docum
 
 applyLogo();renderThemeButtons();renderSubjectSettings();render();
 </script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  });
+}
+setInterval(() => {
+  try { render(); } catch (_) {}
+}, 60000);
+</script>
+
 </body></html>
