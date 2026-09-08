@@ -1,4 +1,4 @@
-const CACHE = "horario-pauli-v6";
+const CACHE = "horario-pauli-v7";
 
 
 const ASSETS = [

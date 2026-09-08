@@ -1,26 +1,11 @@
-HORARIO DE PAULI — V8
+HORARIO DE PAULI — V9
 
-NOVEDADES
-- El botón del pánico ahora incluye los 11 gatitos que ha pedido el usuario.
-- Se mantiene el texto “PUEDES CON TODO, AMOR”, el confeti y el fondo discoteca.
+CAMBIOS
+- En la página principal el botón vuelve a llamarse "Botón del pánico".
+- Dentro del modo pánico el título ahora dice "PUEDES CON TODO AMOR".
+- Se ha eliminado el subtítulo bajo el título principal.
+- El botón de salida ahora pone "Chupamela USJ".
 
-SUBE / REEMPLAZA EN GITHUB
-- index.html
-- manifest.webmanifest
-- sw.js
-- icon-180.png
-- icon-192.png
-- icon-512.png
-- panic-cat-1.webp
-- panic-cat-2.webp
-- panic-cat-3.webp
-- panic-cat-4.webp
-- panic-cat-5.webp
-- panic-cat-6.webp
-- panic-cat-7.webp
-- panic-cat-8.webp
-- panic-cat-9.gif
-- panic-cat-10.webp
-- panic-cat-11.webp
-
-Si ves la versión antigua, haz una recarga fuerte o ábrelo en una pestaña privada para saltarte la caché.
+ACTUALIZACIÓN
+- Sube y reemplaza todos los archivos del ZIP en GitHub.
+- Si ves la versión antigua, haz recarga fuerte o abre en pestaña privada.
